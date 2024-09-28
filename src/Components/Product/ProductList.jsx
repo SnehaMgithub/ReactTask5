@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
-import Cart from '../Cart/cart';
+import Cart from '../Cart/CartList';
 
 const ProductList = ({fetchData,cart,setCart}) => {
     

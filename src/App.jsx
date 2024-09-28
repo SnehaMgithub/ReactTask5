@@ -2,8 +2,9 @@ import React,{useState,useEffect}from 'react';
 import axios from 'axios';
 import ProductList from './Components/Product/ProductList';
 import Navbar from './Components/Navbar/Navbar';
-import Cart from './Components/Cart/cart';
+
 import './index.css'
+import Cart from './Components/Cart/CartList';
 
 const App = () => {
   const [isModal,setModal]=useState(false);
@@ -27,6 +28,7 @@ const App = () => {
        <Cart cartItem={cart} 
        setCart={setCart} 
        closeModal={() => setModal(false)} />)}
+       
        
         
     </div>

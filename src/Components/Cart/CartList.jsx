@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart = ({ cartItem, setCart, closeModal }) => {
+const CartList = ({ cartItem, setCart, closeModal }) => {
   const handleRemove = (itemId) => {
     setCart(cartItem.filter(ele => ele.id !== itemId));
   };
@@ -34,4 +34,4 @@ const Cart = ({ cartItem, setCart, closeModal }) => {
   );
 };
 
-export default Cart;
+export default CartList;
